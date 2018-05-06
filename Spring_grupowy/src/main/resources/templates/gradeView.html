@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+    <title>Rejestracja</title>
+</head>
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Niebywaly sukces dydaktyczny</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="register">Register</a>
+                    <!--<a class="nav-link js-scroll-trigger" href="#services">Dlaczego my?</a>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Panel kursanta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="grade">Twoje wyniki</a>
+                    <!--<a class="nav-link js-scroll-trigger" href="#about">Harmonogram</a>-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#team">Trenerzy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="login">Login</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Header -->
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Twoje wyniki</div>
+            <!--<div class="intro-heading text-uppercase">Dokonaj właściwego wyboru!</div>-->
+            <!--<a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>-->
+            <div class="container">
+
+
+            <div class="col-lg-6 text-center leftfloat">
+                <p th:text="${kursantregister.email}"/>
+                <p><th th:text="${kursantregister.email}"></th></p>
+                <p><th th:text="${kursantregister.p1}"></th></p>
+                <p><th th:text="${kursantregister.o1}"></th></p>
+                <p><th th:text="${kursantregister.p2}"></th></p>
+                <p><th th:text="${kursantregister.o2}"></th></p>
+            </div>
+            <div class="col-lg-6 text-center leftfloat">
+                <p><th th:text="${kursantregister.p3}"></th></p>
+                <p><th th:text="${kursantregister.o3}"></th></p>
+                <p><th th:text="${kursantregister.p4}"></th></p>
+                <p><th th:text="${kursantregister.o4}"></th></p>
+                <br>                <br>
+
+
+
+            </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+</body>
+</html>

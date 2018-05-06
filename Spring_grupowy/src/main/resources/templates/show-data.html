@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="allData">Twoje dane</label>
+
+<tr th:each="kursant: ${allData}">
+
+    <p><td th:text="${kursant.imie}"></td></p>
+    <p><td th:text="${kursant.nazwisko}"></td></p>
+    <p><td th:text="${kursant.email}"></td></p>
+    <p><td th:text="${kursant.paswd}"></td></p>
+    <p><td th:text="${kursant.gitlogin}"></td></p>
+    <p><td th:text="${kursant.telefon}"></td></p>
+
+
+</tr>
+
+<label for="Oceny">Twoje dane</label>
+<!--Oceny-->
+<label for="Projekty">Twoje dane</label>
+<!--Projekty-->
+
+</body>
+</html>
